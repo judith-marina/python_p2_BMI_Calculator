@@ -1,0 +1,45 @@
+# BMI Calculator = weight(kg) / height(inches) * times square
+
+# Classification	BMI range - kg/m2
+# Severe Thinness	< 16
+# Moderate Thinness	16 - 17
+# Mild Thinness	17 - 18.5
+# Normal	18.5 - 25
+# Overweight	25 - 30
+# Obese Class I	30 - 35
+# Obese Class II	35 - 40
+# Obese Class III	> 40
+
+
+name =(input("Input your name"))
+
+weight = float(input("Enter your weight in kilograms: "))
+ 
+height = float(input("Enter your height in foot.inches: "))
+
+BMI = (weight) / (height * 0.3048)**2
+
+print(BMI)
+
+if(BMI)>0:
+    if(BMI < 16):
+        print(name +", you are Severe Thin.")
+    elif(BMI <= 17):
+        print(name +", you are Moderate Thin.")
+    elif(BMI < 18.5):
+        print(name +", you are Mild Thin.")
+    elif(BMI < 25):
+        print(name +", you are normal.")
+    elif(BMI < 30):
+        print(name +", you are Overweight.")
+    elif(BMI < 35):
+        print(name +", you are Obese Class I.")
+    elif(BMI < 40):
+        print(name +", you are Obese Class II.")
+    elif(BMI > 40):
+        print(name +", you are Obese Class III.")
+    else:
+        print(name +", you are immeasurable.")
+else:
+    print("Enter valid input")
+    
